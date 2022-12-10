@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:name=".Aplicacion"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AplicacionPelis">
+        <activity
+            android:name=".vista.MainActivity"
+            android:theme="@style/Theme.FilmsApp.NoActionBar"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".vista.VistaPeliculaActivity"
+            android:label="Datos Pelicula"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity android:name=".vista.EdicionPeliculaActivity"
+            android:label="Edición película"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>
