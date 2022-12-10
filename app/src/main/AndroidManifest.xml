@@ -11,23 +11,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AplicacionPelis">
         <activity
-            android:name=".vista.MainActivity"
-            android:theme="@style/Theme.FilmsApp.NoActionBar"
-            android:exported="true">
+            android:name=".vista.Splash"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".vista.VistaPeliculaActivity"
+        <activity
+            android:name=".vista.MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.FilmsApp.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".vista.VistaPeliculaActivity"
             android:label="Datos Pelicula"
-            android:screenOrientation="portrait"
-            >
-        </activity>
-        <activity android:name=".vista.EdicionPeliculaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".vista.EdicionPeliculaActivity"
             android:label="Edición película"
-            android:screenOrientation="portrait">
-        </activity>
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
