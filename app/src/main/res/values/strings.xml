@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">AplicacionPelis</string>
+    <string name="app_nme">Films App <font color="fff"></font></string>
+    <string name="app_name"><font color='White'>Films App!</font></string>
+
 </resources>
