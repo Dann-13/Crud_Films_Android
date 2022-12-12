@@ -10,7 +10,7 @@
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar_Main"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/app_bar_height"
+        android:layout_height="196dp"
         android:background="#fff"
         android:theme="@style/Theme.AplicacionPelis">
 
@@ -18,11 +18,11 @@
             android:id="@+id/toolbar_layout_Main"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@drawable/drawable_shape_rounded"
             android:fitsSystemWindows="true"
             app:contentScrim="@color/barra_titulo"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
             app:title="@string/app_name"
-            android:background="@drawable/drawable_shape_rounded"
 
             app:toolbarId="@+id/toolbar">
 
@@ -31,8 +31,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="100dp"
 
-                android:paddingLeft="180dp"
                 android:layout_marginTop="50dp"
+                android:paddingLeft="180dp"
                 app:layout_anchor="@+id/app_bar_Main"
                 app:layout_anchorGravity="center"
                 app:srcCompat="@drawable/cinta" />
@@ -48,8 +48,10 @@
                 app:subtitleTextColor="#000000"
                 app:titleTextColor="#101010" />
 
+
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
+
     <include layout="@layout/content_main" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -57,7 +59,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="ADD"
-        app:backgroundTint="#141B2B"
+        app:backgroundTint="#1D2840"
         app:layout_anchor="@id/app_bar_Main"
         app:layout_anchorGravity="bottom|end"
         app:srcCompat="@android:drawable/ic_input_add" />
